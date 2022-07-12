@@ -43,7 +43,6 @@ SELECT * FROM animals;
 SELECT COUNT(*) as total_animals FROM animals;
 SELECT COUNT(*) as zero_escape_attempts FROM animals WHERE escape_attempts = '0';
 SELECT AVG(weight_kg) as average_animal_weight FROM animals;
-SELECT name as Animal_Escaping_The_Most,MAX(escape_attempts) as Max_Escape_Attempts FROM animals GROUP BY neutered, 
-Animal_Escaping_The_Most ORDER BY Max_Escape_Attempts DESC LIMIT 1;
+SELECT neutered, MAX(escape_attempts) FROM ANIMALS GROUP BY neutered;
 SELECT MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
 SELECT AVG(escape_attempts) FROM animals WHERE date_of_birth  BETWEEN '1990-01-01'AND '2000-01-01'  GROUP BY species;;
