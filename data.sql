@@ -77,3 +77,43 @@ VALUES (1, 1),
        (3, 2),git 
        (3, 1),
        (4, 2);
+
+-- Insert the following data for visits:
+
+INSERT INTO visits (vets_id, animals_id, date)
+VALUES (1, 1, '2020-05-24'),
+       (3, 1, '2020-06-22'),
+       (4, 2, '2021-02-02'),
+       (2, 3, '2020-01-05'),
+       (2, 3, '2020-03-08'),
+       (2, 3, '2020-05-14'),
+       (3, 4, '2021-05-04'),
+       (4, 9, '2021-02-24'),
+       (2, 10, '2019-12-21'),
+       (1, 10, '2020-08-10'),
+       (2, 10, '2021-04-07'),
+       (3, 11, '2019-09-29'),
+       (4, 12, '2020-10-03'),
+       (4, 12, '2020-11-04'),
+       (2, 13, '2019-01-24'),
+       (2, 13, '2019-05-15'),
+       (2, 13, '2020-01-27'),
+       (2, 13, '2020-08-03'),
+       (3, 14, '2020-05-24'),
+       (1, 14, '2021-01-11');
+
+--     Blossom visited Stephanie Mendez on May 24th, 2020.
+--     Blossom visited William Tatcher on Jan 11th, 2021.
+
+-- Write queries to answer the following:
+
+--     Who was the last animal seen by William Tatcher?
+--     How many different animals did Stephanie Mendez see?
+--     List all vets and their specialties, including vets with no specialties.
+--     List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+--     What animal has the most visits to vets?
+--     Who was Maisy Smith's first visit?
+--     Details for most recent visit: animal information, vet information, and date of visit.
+--     How many visits were with a vet that did not specialize in that animal's species?
+--     What specialty should Maisy Smith consider getting? Look for the species she gets the most.
+
