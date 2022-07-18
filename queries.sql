@@ -63,3 +63,9 @@ SELECT AVG(escape_attempts) FROM animals WHERE date_of_birth  BETWEEN '1990-01-0
     SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id and owners.full_name ='Dean Winchester' and animals.escape_attempts = 0;
     Who owns the most animals?
 SELECT owners.full_name, COUNT(animals) FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY owners.full_name ORDER BY COUNT(animals) DESC LIMIT 1;
+
+-- The following queries are taking too much time (1 sec = 1000ms can be considered as too much time for database query). Try them on your machine to confirm it:
+
+    SELECT COUNT(*) FROM visits where animal_id = 4;
+    SELECT * FROM visits where vet_id = 2;
+    SELECT * FROM owners where email = 'owner_18327@mail.com';
